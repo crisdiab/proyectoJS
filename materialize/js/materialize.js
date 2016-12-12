@@ -522,6 +522,8 @@ if (jQuery) {
   $(document).ready(function(){
     $('.collapsible').collapsible();
     $(".dropdown-button").dropdown();
+      $('.dropdown-button').dropdown('open');
+      $('.dropdown-button').dropdown('close');
   });
 }( jQuery ));;(function ($) {
 
