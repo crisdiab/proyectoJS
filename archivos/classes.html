@@ -42,7 +42,73 @@
             </div>
         </nav>
 
+        <div class="container">
+            <div class="row">
+                <div class="col s6">
+                    <a class="waves-effect waves-light btn-large" href="spread.html"><i class="material-icons left">fast_rewind</i>Anterior</a>
 
+                </div>
+                <div class="col s6">
+                    <a class="waves-effect waves-light btn-large" href="promises.html"><i class="material-icons right">fast_forward</i>Siguiente</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col s12 ">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Classes</span>
+                            <p>ES6 nos permite de una manera simplificada la creacion de clases</p>
+
+                            ejemplo:
+
+                            <pre><code class="JavaScript">
+
+
+                   class Person {
+                        constructor(nombre, edad, genero) {
+                            this.nombre   = nombre;
+                            this.edad    = edad;
+                            this.genero = genero;
+                        }
+                    //Metodos,Operaciones
+                        incrementarEdad() {
+                          this.edad += 1;
+                        }
+                    }
+                  </code></pre>
+
+                    Ademas si queremos realizar herencia necesitamos agregrar la palabra "extends" en la clase como se muestra en el
+                       siguiente ejemplo.
+                       
+                       <pre><code class="JavaScript">
+                           
+                           
+                           class Personal extends Person {
+                                constructor(nombre, edad, genero, ocupacion, hobby) {
+                                    super(name, age, gender);
+                                    this.ocupacion = ocupacion ;
+                                    this.hobby = hobby;
+                                }
+
+                                incrementarEdad() {
+                                    super.incrementarEdad();
+                                    this.edad += 20;
+                                    console.log(this.edad);
+                                }
+                            }
+                       </code></pre>
+                       
+                       Como se puede observar ES6 en lo referente a clases no permite escribir codigo limpiio lo que es una buena practica para que los principiantes entiendan de una buena manera.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
 
 
 

@@ -54,7 +54,7 @@
              
          </div>
          <div class="col s6">
-             <a class="waves-effect waves-light btn-large"><i class="material-icons right">fast_forward</i>Siguiente</a>
+             <a class="waves-effect waves-light btn-large" href="spread.html"><i class="material-icons right">fast_forward</i>Siguiente</a>
          </div>
      </div>
      
@@ -139,7 +139,31 @@
              </li>
              <li>
                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Named Parameters</div>
-                 <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                 <div class="collapsible-body"><p>Uno de los patrones en  ES5 para manejar "Named Parameters" era utilizar las opciones de objeto de modelo, adoptado de jQuery.</p>
+                 
+                 En ES5: 
+                 <pre><code class="JavaScript">
+                     
+                     function initializeCanvas(options) {
+                        var height = options.height || 600;
+                        var width  = options.width  || 400;
+                        var lineStroke = options.lineStroke || 'black';
+                    }
+                 </code></pre>
+                 En ES6:
+                 <pre><code class="JavaScript">
+                     
+                     function initializeCanvas(
+                        { height=600, width=400, lineStroke='black'}) {
+                            // Use variables height, width, lineStroke here
+                        }
+                 </code></pre>
+                 
+                 La solucion consiste en dejar en blanco dentro de la funcion asi si queremos cambiar cualquier valor lo hacemos
+                 
+                 
+                 
+                 </div>
              </li>
          </ul>
         
