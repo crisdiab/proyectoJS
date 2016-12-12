@@ -21,7 +21,7 @@
 
 <body>
  
- Informacion EcmaScript con Materialize
+ 
   <!-- Dropdown Structure -->
   <ul id="dropdown1" class="dropdown-content">
 
@@ -38,7 +38,7 @@
    
     <div class="nav-wrapper">
      
-      <a href="index.html" class="brand-logo center">Inicio</a>
+      <a href="index.html" class="brand-logo center">Framework Materialize</a>
       <ul id="nav-mobile" class="center hide-on-med-and-down">
      
         <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Contenido<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -68,11 +68,74 @@
          <ul class="collapsible" data-collapsible="accordion">
              <li>
                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>Default Parameters</div>
-                 <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                 <div class="collapsible-body"><p>En ES5, que habíamos variando las formas de manejar funciones que necesitan  valores por defecto , argumentos indefinidos , y  parámetros con nombre . Con ES6, podemos lograr todo esto y mucho más utilizando una sintaxis más concisa.</p>
+              
+                 
+                 <h5>Ejemplo de codigo</h5>
+                 <p>En ES5</p>
+                 <pre><code class="JavaScript">
+                     
+                     function  SumarNumeros ( x , y ) {
+                        x = x ||  0 ;
+                        Y = Y ||  0 ;
+                        return x + y;
+                    }
+                     
+                     
+                     
+                 </code></pre>
+                 
+                 <p>En la funcion se declara valores por defecto igual a cero o el valor por argumento si la variable no es enviada en la invocacion automaticamente se asigna</p>
+                     <p>En ES6</p>
+                     <pre><code class="JavaScript">
+
+                    función  SumarNumeros ( x = 0 , y = 0 ) {
+                         retorno x + y;
+                    }
+
+
+
+                 </code></pre>
+                 <p>Es una forma mas simplificada la que se ofrece</p>
+                 
+                 <h5>Resultados</h5>
+                 <pre><code class="JavaScript">
+                     
+                     SumarNumeros(3,4) //Respuesta 3+4=7
+                     SumarNumeros(2) //Respuesta 2+0=2
+                     SumarNumeros() //Respuesta 0+0=0
+                 </code></pre>
+                 </div>
              </li>
              <li>
                  <div class="collapsible-header"><i class="material-icons">place</i>Rest Parameters</div>
-                 <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                 <div class="collapsible-body"><p>Anterior en ES5 el numero indefinido de argumentos se manejaba de la siguiente manera</p>
+                 
+                 <pre><code class="JavaScript">
+                     function ejemplo(x,y){
+                     var a = Array.prototype.slice.call(arguments, 2);
+                     
+                     return x+y+a.length;
+                     }
+                 </code></pre>
+                 
+                 En ES6: 
+                 <pre><code class="JavaScript">
+                       function ejemplo(x,y,..a){
+                    
+                     return x+y+a.length;
+                     }
+                 </code></pre>
+                 <p>Es necesario simplemente en nuestra funcion poner "..a" asi tendremos la opcion de escribir argumentos infinitos</p>
+                 
+                     <h5>Resultados</h5>
+                     <pre><code class="JavaScript">
+
+                    ejemplo(2,3,4,5) //2+3+2=7
+                    ejemplo(3,1,false) //3+1+1=5
+                 </code></pre>
+                 
+                 </div>
              </li>
              <li>
                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Named Parameters</div>
