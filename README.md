@@ -11,9 +11,7 @@
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco-teorico">Modelo de la BDD</a>
 * <a href="#modelo_bdd">Script de la BDD</a>
-* <a href="#script_bdd">Github</a>
-- <a href="#desarrollo">Desarrollo de la Práctica</a>
-- <a href="#conrec">Conclusiones y Recomendaciones</a> 
+* <a href="#script_bdd">SCript</a>
 
 <a name="tema"></a>
 ## Tema
